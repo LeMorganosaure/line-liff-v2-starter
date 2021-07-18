@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
     const sendMessage = () => {
+        console.log(`Liff Id : ${process.env.MY_LIFF_ID}`);
         liff.init({liffId: `${process.env.MY_LIFF_ID}`}).then(() => {
             liff.sendMessages([
                 {
